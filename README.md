@@ -3,7 +3,7 @@ Questioning whether that one rumor you heard is true? Need to verify a quick fac
 
 ## MVP
 
-- User should be able to search some claim or notion, like "5G causes COVID-19"
+- User should be able to search some claim or query, like "5G causes COVID-19"
 - App will return snippets of articles that support or refute that claim, and provide some context as to the reliability of the source / article
 - User can tap articles to visit them online and read them fully
 - User can save articles for future reference, and share articles from the app itself
