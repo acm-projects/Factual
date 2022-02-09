@@ -76,3 +76,5 @@ We can really go either way here, so Flutter, React Native, or React.js
 
 ## Resources
 - [Google Fact Check Tools API](https://developers.google.com/fact-check/tools/api)
+- [Building an API in NODE](https://www.youtube.com/watch?v=fsCjFHuMXj0)
+- [GIT Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
