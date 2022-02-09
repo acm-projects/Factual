@@ -46,27 +46,27 @@ We can really go either way here, so Flutter, React Native, or React.js
 - Cons: 
   - If you want a mobile application this isn’t the way to go, use react native instead
 ### Back-end: 
-Flask, Django, or Node.js
-Flask: 
-Pros: 
-Very fast for building micro-applications or smaller applications
-Very easy to understand (Python)
-Cons: 
-Not as many features built in as Django or Node.js
-Django: 
-Pros: 
-Built-in tools for creating and managing webpages
-Cons: 
-Might be too large, somewhat hard to navigate when on a tight deadline and working on a smaller project
-Node.js:
-Pros: 
-Widely used
-Has a package manager that takes care of most of the issues with having to install packages
-Cons: 
-Javascript is not as readable as python
-Database in MongoDB or SQL, or use Firebase
-Firebase would be really good as it has DB and auth handling
-With MongoDB and SQL, would have to build authentication
+- Flask, Django, or Node.js
+- Flask: 
+- Pros: 
+  - Very fast for building micro-applications or smaller applications
+  - Very easy to understand (Python)
+- Cons: 
+  - Not as many features built in as Django or Node.js
+- Django: 
+- Pros: 
+  - Built-in tools for creating and managing webpages
+- Cons: 
+- Might be too large, somewhat hard to navigate when on a tight deadline and working on a smaller project
+- Node.js:
+- Pros: 
+  - Widely used
+  - Has a package manager that takes care of most of the issues with having to install packages
+- Cons: 
+  - Javascript is not as readable as python
+  - Database in MongoDB or SQL, or use Firebase
+  - Firebase would be really good as it has DB and auth handling
+  - With MongoDB and SQL, would have to build authentication
 
 ## Software to Install
 
