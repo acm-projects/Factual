@@ -73,3 +73,6 @@ We can really go either way here, so Flutter, React Native, or React.js
 - Django / Flask / Node.js (with Express and Nodemon)
 - (maybe) Android Studio for prototyping
 - IDE is up to you, but I recommend VS Code
+
+## Resources
+- [https://developers.google.com/fact-check/tools/api]API
