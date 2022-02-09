@@ -10,7 +10,7 @@ Questioning whether that one rumor you heard is true? Need to verify a quick fac
 
 ## Milestones
 
-Front-end: 
+### Front-end: 
 Optional login page (user can choose to log in or not)
 Article search page
 Article results page, which should have articles in cards under the search query
@@ -18,7 +18,7 @@ Somewhere on this page, for each article, the app should flag the credibility of
 Article interaction: The user should be able to tap the article card and be sent to the full article page
 Tapping and holding the article card can prompt user to choose from a list of options: save article, share article, view full article page
 Saved articles page: User should be able to see all articles that they have saved
-Back-end:
+### Back-end:
 Connect to Google Fact Check Tools API 
 Connect to API that can pull links to articles based on the user’s search
 JSONify the article results, along with its biases: { query: “query”, results: { art1: bias1 art2: bias2, … }  }
@@ -45,7 +45,7 @@ Pros:
 Widely used and great performance for web development
 Cons: 
 If you want a mobile application this isn’t the way to go, use react native instead
-Back-end: 
+### Back-end: 
 Flask, Django, or Node.js
 Flask: 
 Pros: 
