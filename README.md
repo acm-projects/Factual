@@ -75,4 +75,4 @@ We can really go either way here, so Flutter, React Native, or React.js
 - IDE is up to you, but I recommend VS Code
 
 ## Resources
-- [https://developers.google.com/fact-check/tools/api]API
+- [https://developers.google.com/fact-check/tools/api] API
