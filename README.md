@@ -64,7 +64,7 @@ We can really go either way here, so Flutter, React Native, or React.js
   - Has a package manager that takes care of most of the issues with having to install packages
 - Cons: 
   - Javascript is not as readable as python
-  - Database in MongoDB or SQL, or use Firebase
+- Database in MongoDB or SQL, or use Firebase
   - Firebase would be really good as it has DB and auth handling
   - With MongoDB and SQL, would have to build authentication
 
