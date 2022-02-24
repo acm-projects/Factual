@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "axios": "^0.26.0",
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "https": "^1.0.0"
+  },
+  "name": "factual",
+  "description": "Questioning whether that one rumor you heard is true? Need to verify a quick fact? Factual is the app that can help you answer all your questions and give a reliability rating for each source too!",
+  "version": "1.0.0",
+  "main": "factual.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acm-projects/Factual.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acm-projects/Factual/issues"
+  },
+  "homepage": "https://github.com/acm-projects/Factual#readme"
+}
