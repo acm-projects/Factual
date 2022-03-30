@@ -1,0 +1,67 @@
+{
+    "Website0": {
+        "website_url": "https://www.wmur.com/article/nh-primary-source-leavitt-says-trump-won-2020-election-but-biden-is-legitimately-president/37117521",
+        "website_title": "NH Primary Source: Leavitt says Trump won 2020 election but says she recognizes Biden is president",
+        "website_description1": "hi",
+        "website_description2": "Four days after announcing her candidacy for the state\u2019s 1st Congressional District U.S. House seat, Republican Karoline Leavitt said Friday she believes her former boss, Donald Trump, won the 2020 presidential election.",
+        "compared_claim": "President Joe Biden said there is a 'new world order'",
+        "compared_source": "Social media",
+        "checked_artical": "Fact check: Biden's 'new world order' reference tied to Ukraine, not conspiracy theory",
+        "checked_link": "https://www.usatoday.com/story/news/factcheck/2022/03/25/fact-check-biden-did-not-admit-new-world-order-conspiracy/7156937001/",
+        "checked_name": "USA Today",
+        "checked_site": "usatoday.com",
+        "checked_rating": "Missing Context"
+    },
+    "Website1": {
+        "website_url": "https://www.politifact.com/factchecks/2022/feb/10/facebook-posts/no-msnbc-didnt-announce-donald-trump-won-2020-elec/",
+        "website_title": "PolitiFact | No, MSNBC didn\u2019t announce Donald Trump won the 2020 election",
+        "website_description1": "hi",
+        "website_description2": "The title of a recent, widely viewed Facebook video makes an unlikely claim: \"MSNBC announced Trump won 2020 election.\" ",
+        "compared_claim": "\u201cMSNBC announced Trump won 2020 election.\u201d",
+        "compared_source": "Facebook posts",
+        "checked_artical": "No, MSNBC didn't announce Donald Trump won the 2020 election",
+        "checked_link": "https://www.politifact.com/factchecks/2022/feb/10/facebook-posts/no-msnbc-didnt-announce-donald-trump-won-2020-elec/",
+        "checked_name": "PolitiFact",
+        "checked_site": "politifact.com",
+        "checked_rating": "Pants on Fire"
+    },
+    "Website2": {
+        "website_url": "https://www.nbcnews.com/politics/donald-trump/trump-won-these-counties-big-his-supporters-question-results-there-n1278653",
+        "website_title": "Trump won these counties big. His supporters question the results there, too.",
+        "website_description1": "hi",
+        "website_description2": "Attempts to revisit the results of the 2020 election are cropping up in counties Trump won by huge margins.",
+        "compared_claim": "none",
+        "compared_source": "none",
+        "checked_artical": "none",
+        "checked_link": "none",
+        "checked_name": "none",
+        "checked_site": "none",
+        "checked_rating": "none"
+    },
+    "Website3": {
+        "website_url": "https://www.bbc.com/news/world-us-canada-55481521",
+        "website_title": "US election 2020: The people who still believe Trump won - BBC News",
+        "website_description1": "Weeks after President-elect Joe Biden was declared winner of November's election, there remains a deep mistrust of the electoral process among many ardent supporters of Donald Trump. It reflects a broader sentiment among conservatives, one that has profound implications for the nation and its institutions.",
+        "website_description2": "A distrust of the electoral process among Trump supporters could have implications for the nation.",
+        "compared_claim": "The BBC reported that the Russia-Ukraine has led to a nuclear bomb attack on NATO headquarters in Brussels.",
+        "compared_source": "Posts on Facebook",
+        "checked_artical": "BBC Report On Nuclear Attack On NATO HQ By Russia Is Fictional ...",
+        "checked_link": "https://www.boomlive.in/world/ukraine-russia-crisis-conflict-usa-nato-uk-nuclear-attack-bbc-report-16852",
+        "checked_name": "Full Fact",
+        "checked_site": "boomlive.in",
+        "checked_rating": "False"
+    },
+    "Website4": {
+        "website_url": "https://www.wweek.com/news/2022/01/19/we-asked-republicans-did-donald-trump-win-in-2020/",
+        "website_title": "We Asked Republicans: Did Donald Trump Win in 2020?",
+        "website_description1": "We asked: \u201cDid Joe Biden legitimately win the 2020 presidential election?\u201d",
+        "website_description2": "",
+        "compared_claim": "The 2020 presidential election was 'rigged'",
+        "compared_source": "Donald Trump, social media users",
+        "checked_artical": "Fact check: Donald Trump persists with false claim about 2020 results",
+        "checked_link": "https://www.usatoday.com/story/news/factcheck/2022/01/06/fact-check-donald-trump-2020-election-results/9115875002/",
+        "checked_name": "USA Today",
+        "checked_site": "usatoday.com",
+        "checked_rating": "False"
+    }
+}

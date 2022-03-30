@@ -4,7 +4,7 @@ import requests
 myfile=open(r"C:\Users\danie\OneDrive\Desktop\UT_Dallas\ACM_Projects\key.txt","r")
 key=myfile.read().replace("\n", "")
 
-claim="5G causes flu-like symptoms"
+claim="trump lost 2020"
 
 url=f"https://factchecktools.googleapis.com/v1alpha1/claims:search?languageCode=en-us&maxAgeDays=100&pageSize=5&pageToken=1&query={claim}&key={key}";
 try:
@@ -47,8 +47,7 @@ try:
                 except:
                     rating=None
                     
-                    
-                
+
                 print(f"Origin #{i}")
                 print(f"     Claim: {text}")
                 print(f"     Source: {claimant}")
