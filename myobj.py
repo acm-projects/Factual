@@ -3,8 +3,10 @@ class website_data():
             #Original artical
             self.url="none"
             self.title="none"
-            self.description1="hi"
+            self.description1="none"
             self.description2="none"
+            self.mypolarity="none"
+            self.mysubjectivity="none"
             #API google fact check
             self.claim="none"
             self.source="none"
@@ -15,6 +17,10 @@ class website_data():
             self.site="none"
             self.rating="none"
         #Setter
+        def set_mypolarity(self,info):
+            self.mypolarity=info
+        def set_mysubjectivity(self,info):
+            self.mysubjectivity=info
         def set_url(self,info):
             self.url=info
         def set_title(self,info):
@@ -38,6 +44,10 @@ class website_data():
         def set_rating(self, info):
             self.rating=info  
         #Getter
+        def get_mypolarity(self):
+            return self.mypolarity
+        def get_mysubjectivity(self):
+            return self.mysubjectivity
         def get_url(self):
             return self.url
         def get_title(self):

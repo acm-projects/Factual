@@ -7,5 +7,7 @@ Created on Tue Mar 29 15:34:49 2022
 import requests
 
 BASE="http://127.0.0.1:5000/"
-response=requests.get(BASE+"helloworld/trump won 2020")
-print(response.json())
+user_input=input("Search: ")
+response=requests.get(BASE+f"helloworld/{user_input}")
+information=response.json()
+print(information)
