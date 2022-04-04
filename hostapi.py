@@ -13,7 +13,8 @@ from flask_restful import Api, Resource
 from textblob import TextBlob
 #textlob
 def fact_check(claim,wd):
-    myfile=open(r"C:\Users\danie\OneDrive\Desktop\UT_Dallas\ACM_Projects\key.txt","r")
+    location=input("Enter API file location")
+    myfile=open(location,"r")
     key=myfile.read().replace("\n", "")
 
     url=f"https://factchecktools.googleapis.com/v1alpha1/claims:search?languageCode=en-us&maxAgeDays=100&pageSize=5&pageToken=1&query={claim}&key={key}";
@@ -104,6 +105,7 @@ def get_title(res,soup,wd):
     else:
         mywords=wd.get_title().split(" ")
         totalwords=""
+        print(totalwords)
         for i in range(len(mywords)):
             totalwords=mywords[len(mywords)-1-i]+" "+totalwords
             if i%3:
