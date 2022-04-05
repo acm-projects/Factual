@@ -13,8 +13,7 @@ from flask_restful import Api, Resource
 from textblob import TextBlob
 #textlob
 def fact_check(claim,wd):
-    location=input("Enter API file location")
-    myfile=open(location,"r")
+    myfile=open("key.txt","r")
     key=myfile.read().replace("\n", "")
 
     url=f"https://factchecktools.googleapis.com/v1alpha1/claims:search?languageCode=en-us&maxAgeDays=100&pageSize=5&pageToken=1&query={claim}&key={key}";
@@ -195,11 +194,11 @@ def main():
     app=Flask(__name__)
     api=Api(app)
     
-    class HelloWorld(Resource):
-        def get(self,name):
-            return start(name)
+    class Factual(Resource):
+        def get(self,question):
+            return start(question)
     
-    api.add_resource(HelloWorld,"/helloworld/<string:name>")
+    api.add_resource(Factual,"/factual/<string:question>")
     
     if __name__=="__main__":
         app.run(debug=True)
