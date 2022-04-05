@@ -1,0 +1,28 @@
+.main {
+    padding-top: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+body{
+    background-color: #343a40;
+}
+
+.home{
+    background-color: #e9ecef;
+}
+
+.display-4{
+    text-align: center;
+}
+
+label{
+    color: white;
+}
+
+.btns{
+width: 350px;
+}
+.btnholder{
+margin-left: 25%;
+}
