@@ -21,14 +21,14 @@ const AuthProvider = ({ children }) => {
     realmRef.current = userRealm;
   });
 
-    return () => {
-      // cleanup function
-      const userRealm = realmRef.current;
-      if (userRealm) {
-        userRealm.close();
-        realmRef.current = null;
-      }
-    };
+  return () => {
+    // cleanup function
+    const userRealm = realmRef.current;
+    if (userRealm) {
+      userRealm.close();
+      realmRef.current = null;
+    }
+   };
   }, [user];
 
 const signIn = async (username, password) => {

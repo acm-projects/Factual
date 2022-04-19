@@ -1,5 +1,5 @@
-import * as ReactYea from 'react';
-import React, { useState, Component } from 'react';
+import * as ReactYea from "react";
+import React, { useState, useEffect, Component } from "react";
 import {
   Alert,
   Button,
@@ -17,56 +17,40 @@ import {
   Platform,
   FlatList,
   StatusBar,
-} from 'react-native';
-import { Icon } from 'react-native-elements';
-import { Card } from 'react-native-paper';
+} from "react-native";
+import { Icon } from "react-native-elements";
+import { Card } from "react-native-paper";
 
 export default class ResultsScreen extends Component {
   constructor(props) {
     super(props);
-// this holds the array of all the article objects/items
-    (this.state = {
+    // this holds the array of all the article objects/items
+    this.state = {
       array: [],
       arrayHolder: [],
-      textInput_Holder: '',
-    });
+      textInput_Holder: "",
+    };
     this.checked = [
       { repchecked: false, demchecked: false, nonparchecked: false },
     ];
   }
-  
-  componentDidMount() {
-    fetch('')
+
+  fetchData(textInput_Holder) {
+    this.setState({ textInput_Holder });
+    const url = "";
+    fetch(url + textInput_Holder + url)
       .then((response) => response.json())
-      .then((response) => this.setState({ array: [...response]}))
-      .then((array) => this.setState({arrayHolder: [...array]}))
-      .catch((error) => console.error(error));   
+      .then((response) => this.setState({ array: [...response] }))
+      .then((array) => this.setState({ arrayHolder: [...array] }))
+      .catch((error) => console.error(error));
   }
-
-//use this to push the information you get from Daniel onto the array
-/*
-  joinData = () => {
-    this.array.push({
-      bias: 'bias',
-      website_url: 'website url',
-      website_title: 'article title',
-      website_description2: 'description',
-      compared_claim: 'compared claim',
-      checked_name: 'company',
-      checked_rating: 'rating',
-      saved: false,
-    });
-
-    this.setState({ arrayHolder: [...this.array] });
-  };
-  */
 
   FlatListItemSeparator = () => {
     return (
       <View
         style={{
           height: 1,
-          width: '100%',
+          width: "100%",
         }}
       />
     );
@@ -86,7 +70,7 @@ export default class ResultsScreen extends Component {
     this.setState({ arrayHolder });
   };
 
-// this is the actual viewing component
+  // this is the actual viewing component
   render() {
     return (
       <SafeAreaView style={styles.container}>
@@ -101,40 +85,42 @@ export default class ResultsScreen extends Component {
             <Card
               style={{
                 paddingVertical: 10,
-                borderColor: 'black',
+                borderColor: "black",
                 borderRadius: 20,
-                boxShadow: '5px 5px 5px -8px rgba(53, 134, 0, 1)',
-              }}>
+                boxShadow: "5px 5px 5px -8px rgba(53, 134, 0, 1)",
+              }}
+            >
               <Card.Content>
                 <View style={styles.rowContainer}>
                   <Text style={styles.cardtext}>
                     {item.website_description2}
                   </Text>
                   <Icon
-                    name={item.saved ? 'bookmark' : 'bookmark-outline'}
+                    name={item.saved ? "bookmark" : "bookmark-outline"}
                     color="#358600"
                     onPress={() => {
                       this.props.isLoggedIn
                         ? this.updateSaved(item)
-                        : alert('Please sign in or create an account!');
+                        : alert("Please sign in or create an account!");
                     }}
                   />
                 </View>
                 <Text style={styles.rating}>Political Bias: {item.bias}</Text>
                 <Text
                   style={{
-                    color: '#2A5DB0',
-                    textDecorationLine: 'underline',
+                    color: "#2A5DB0",
+                    textDecorationLine: "underline",
                     fontSize: 15,
                   }}
-                  onPress={() => Linking.openURL(item.website_url)}>
+                  onPress={() => Linking.openURL(item.website_url)}
+                >
                   {item.website_title}
                 </Text>
                 <Text> </Text>
                 <View
                   style={{
-                    justifyContent: 'center',
-                    borderBottomColor: '#358600',
+                    justifyContent: "center",
+                    borderBottomColor: "#358600",
                     borderBottomWidth: 1,
                   }}
                 />
@@ -145,9 +131,10 @@ export default class ResultsScreen extends Component {
                 <Text
                   style={{
                     fontSize: 12,
-                    fontFamily: 'Avenir-Heavy',
+                    fontFamily: "Avenir-Heavy",
                     paddingBottom: 5,
-                  }}>
+                  }}
+                >
                   {item.checked_name} rates this is {item.checked_rating}
                 </Text>
               </Card.Content>
@@ -163,25 +150,25 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     marginTop: StatusBar.currentHeight || 0,
-    justifyContent: 'center',
+    justifyContent: "center",
   },
   cardtext: {
     fontSize: 16,
     paddingBottom: 17,
-    fontFamily: 'Avenir-Book',
+    fontFamily: "Avenir-Book",
   },
   rating: {
     paddingBottom: 17,
     fontSize: 12,
-    fontFamily: 'Avenir-Heavy',
+    fontFamily: "Avenir-Heavy",
   },
   related: {
     fontSize: 14,
     paddingBottom: 17,
-    fontFamily: 'Avenir-Book',
+    fontFamily: "Avenir-Book",
   },
   rowContainer: {
     paddingRight: 10,
-    flexDirection: 'row',
+    flexDirection: "row",
   },
 });

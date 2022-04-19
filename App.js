@@ -213,7 +213,10 @@ function ResultsScreen({ route, navigation }) {
           <TextInput
             style={styles.searchInput}
             placeholder="Enter a statement to verify it"
-            onChangeText={(text) => setText(text)}
+            onChangeText={(text) => {
+              setText(text);
+              this.fetchData(text);
+            }}
             defaultValue={searchText}
           />
         </View>
