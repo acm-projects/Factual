@@ -197,6 +197,26 @@ function ResultsScreen({ route, navigation }) {
             onChangeText={(text) => {
               setText(text);
               this.fetchData(text);
+<<<<<<< HEAD
+=======
+            }}
+            defaultValue={searchText}
+          />
+        </View>
+        <Text style={styles.sortText}> Sort By: </Text>
+        <View style={{ flexDirection: "row", paddingHorizontal: 5 }}>
+          <Icon
+            type="feather"
+            name={nonParChecked ? "check-square" : "square"}
+            onPress={() => {
+              setNonParChecked(!nonParChecked);
+              {
+                nonParChecked ? null : setDemChecked(false);
+              }
+              {
+                nonParChecked ? null : setRepChecked(false);
+              }
+>>>>>>> 009da716c945aed9a1ef83997a8e0daba0d0fde6
             }}
             defaultValue={searchText}
           />
