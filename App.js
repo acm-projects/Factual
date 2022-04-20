@@ -6,17 +6,12 @@ import {
   TextInput,
   View,
   StyleSheet,
-  AppRegistry,
   Text,
   Image,
   Pressable,
   SafeAreaView,
   Dimensions,
   TouchableOpacity,
-  Linking,
-  Platform,
-  FlatList,
-  StatusBar,
 } from "react-native";
 import { Icon } from "react-native-elements";
 import { NavigationContainer } from "@react-navigation/native";
@@ -34,13 +29,6 @@ import SavedArticlesCards from "./screens/SavedArticlesScreen.js";
 import { AuthProvider } from "./providers/AuthProvider.js";
 
 const windowWidth = Dimensions.get("window").width;
-
-// Goals:
-// - card template so it can populate as a list DONEEEE
-// - separate screens into files DONEE
-// - unsave articles? - technically possible - when the user clicks a button to leave the page, send all
-// the articles with saved = true to hector's database
-// - only save articles DONEEE
 
 // This is the very first screen you see with the title and search bar
 function SearchScreen({ route, navigation }) {
@@ -133,13 +121,6 @@ function ResultsScreen({ route, navigation }) {
   // when the search icon in this screen is used, send {text}.text so Daniel for updated user input (right now its just an alert that displays that text)
   const [text, setText] = useState("");
 
-  // variables for the checkboxes
-  const [demChecked, setDemChecked] = React.useState(false);
-  const [repChecked, setRepChecked] = React.useState(false);
-  const [nonParChecked, setNonParChecked] = React.useState(false);
-
-  //  send {demChecked}, {repChecked}, {nonParChecked} to Daniel for sorting - refresh search results list
-  // for the pop-up window
   const [isModalVisible, setModalVisible] = useState(false);
 
   const toggleModal = () => {
@@ -213,57 +194,12 @@ function ResultsScreen({ route, navigation }) {
           <TextInput
             style={styles.searchInput}
             placeholder="Enter a statement to verify it"
-            onChangeText={(text) => setText(text)}
+            onChangeText={(text) => {
+              setText(text);
+              this.fetchData(text);
+            }}
             defaultValue={searchText}
           />
-        </View>
-        <Text style={styles.sortText}> Sort By: </Text>
-        <View style={{ flexDirection: "row", paddingHorizontal: 5 }}>
-          <Icon
-            type="feather"
-            name={nonParChecked ? "check-square" : "square"}
-            onPress={() => {
-              setNonParChecked(!nonParChecked);
-              {
-                nonParChecked ? null : setDemChecked(false);
-              }
-              {
-                nonParChecked ? null : setRepChecked(false);
-              }
-            }}
-            color={"#358600"}
-          />
-          <Text style={styles.sortText}> Impartial </Text>
-          <Icon
-            type="feather"
-            name={demChecked ? "check-square" : "square"}
-            onPress={() => {
-              setDemChecked(!demChecked);
-              {
-                demChecked ? null : setNonParChecked(false);
-              }
-              {
-                demChecked ? null : setRepChecked(false);
-              }
-            }}
-            color={"#358600"}
-          />
-          <Text style={styles.sortText}> Liberal </Text>
-          <Icon
-            type="feather"
-            name={repChecked ? "check-square" : "square"}
-            onPress={() => {
-              setRepChecked(!repChecked);
-              {
-                repChecked ? null : setDemChecked(false);
-              }
-              {
-                repChecked ? null : setNonParChecked(false);
-              }
-            }}
-            color={"#358600"}
-          />
-          <Text style={styles.sortText}> Conservative </Text>
         </View>
       </View>
       <Text></Text>
